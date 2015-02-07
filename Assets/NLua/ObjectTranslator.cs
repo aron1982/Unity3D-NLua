@@ -34,7 +34,8 @@ using NLua.Exceptions;
 using NLua.Extensions;
 
 #if MONOTOUCH
-	using ObjCRuntime;
+using AOT;
+//	using ObjCRuntime;
 #endif
 
 namespace NLua

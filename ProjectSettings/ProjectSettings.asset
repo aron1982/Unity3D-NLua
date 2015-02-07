@@ -9,7 +9,7 @@ PlayerSettings:
   targetDevice: 2
   targetGlesGraphics: 1
   targetResolution: 0
-  accelerometerFrequency: 60
+  accelerometerFrequency: 30
   companyName: DefaultCompany
   productName: NLua
   defaultCursor: {fileID: 0}
@@ -66,7 +66,7 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  iPhoneBundleIdentifier: com.Company.ProductName
+  iPhoneBundleIdentifier: com.sky.nlua
   metroEnableIndependentInputSource: 0
   metroEnableLowLatencyPresentationAPI: 0
   productGUID: a8b12717a7ebb2f4cb98a1f86dbbdca9
@@ -151,7 +151,8 @@ PlayerSettings:
   flashStrippingLevel: 2
   spritePackerPolicy: 
   scriptingDefineSymbols:
-    1: UNITY_3D;USE_KOPILUA;LUA_CORE;CATCH_EXCEPTIONS
+    1: UNITY_3D;LUA_CORE;CATCH_EXCEPTIONS
+    4: UNITY_3D;LUA_CORE;CATCH_EXCEPTIONS;IPHONE;MONOTOUCH
   metroPackageName: NLua
   metroPackageLogo: 
   metroPackageLogo140: 

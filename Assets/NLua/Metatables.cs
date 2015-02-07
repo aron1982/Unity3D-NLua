@@ -34,7 +34,8 @@ using NLua.Method;
 using NLua.Extensions;
 
 #if MONOTOUCH
-	using ObjCRuntime;
+using AOT;
+//	using ObjCRuntime;
 #endif
 
 namespace NLua
@@ -142,6 +143,7 @@ namespace NLua
 		{
 			LuaNativeFunction func = (LuaNativeFunction)translator.GetRawNetObject (luaState, 1);
 			LuaLib.LuaRemove (luaState, 1);
+            Debug.Print("RunFunctionDelegate.........." + func.ToString());
 			return func (luaState);
 		}
 
