@@ -628,7 +628,8 @@ namespace NLua
 						SetMemberCache (memberCache, objType, methodName, member);
 
 					try {
-						object value = property.GetValue (obj, null);
+						//object value = property.GetValue (obj, null);
+						object value = property.GetGetMethod().Invoke(obj,null);
 						translator.Push (luaState, value);
 							
 					} catch (ArgumentException) {
